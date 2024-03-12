@@ -1,0 +1,162 @@
+:root {
+    --main-color: #E59500;
+    --font-main: "Anton", Arial, sans-serif;
+}
+
+
+@font-face {
+    font-family: Anton;
+    src: url(res\fonts\Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: Adamina;
+    src: url(res\fonts\Adamina-Regular.ttf);
+}
+
+h1 , h2 ,nav{
+    font-family: Anton;
+}
+
+
+
+body{
+    font-family: Adamina, sans-serif;
+    margin: 0;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding: 0;
+}
+
+
+/* Animation fade in */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h2{
+    font-size: 96px;
+}
+
+/* TOP PAGE */
+
+.header-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+
+header {
+    color:var(--main-color);
+}
+
+header, nav {
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 40px;
+    padding-right:60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: var(--main-color);
+    padding: 16px 40px;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+
+/* About Me */
+#aboutMe {
+    display: flex; 
+    align-items: center;
+    margin-left: 200px;
+    justify-content: space-around; 
+}
+
+#aboutMe h2{
+    color:var(--main-color);
+}
+
+#aboutMe h2, #aboutMe p {
+    margin:0;
+    padding-right: 1px;
+}
+
+#aboutMe .profileImage {
+    max-width: 30%; 
+    margin-right: 200px;
+    flex-shrink: 0; 
+}
+
+.profileImage img {
+    width: 100%; 
+    height: auto; 
+    margin-top: 30px;
+    box-shadow: 12px -19px var(--main-color);
+    border-radius: 20px; 
+    margin: 0; 
+}
+
+
+
+
+
+
+section {
+    padding:30px 0px 200px 0px;
+    margin: 40px 0px;
+}
+
+section:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .header-nav-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    header, nav {
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+}
