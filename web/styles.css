@@ -121,12 +121,8 @@ nav ul li a {
 }
 
 
-
-
-
-
 section {
-    padding:30px 0px 200px 0px;
+    padding: 20px 0px 20px 0px;
     margin: 40px 0px;
 }
 
@@ -140,6 +136,15 @@ footer {
     text-align: center;
     padding: 20px;
     width: 100%;
+}
+
+
+#skillSection{
+    margin-top: 200px;
+    padding: 60px 0px 400px 0px;
+    background-color: var(--main-color);
+    border-radius: 70px 70px 0 0;
+
 }
 
 /* Media Query for Responsive Design */
