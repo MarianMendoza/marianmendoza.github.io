@@ -141,11 +141,53 @@ footer {
 
 #skillSection{
     margin-top: 200px;
-    padding: 60px 0px 400px 0px;
+    padding: 0px 0px 40px 0px;
     background-color: var(--main-color);
     border-radius: 70px 70px 0 0;
 
 }
+
+#skillSection h2{
+    text-align: center;
+    color: #f0f0f0;
+    padding-top: 20px;
+    margin-bottom: 27px;
+}
+
+.row{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin:10px 200px 30px 200px;
+    margin-top: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .card {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin:0px 70px;
+    align-items: center;
+    padding:50px 0px 210px 0px;
+    margin-bottom: 2rem;
+    border: #333;
+    flex-basis: 23%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+  .card > img {
+    margin-bottom: .75rem;
+    margin-top: 80px;
+    text-align: center;
+    width: 40%;
+  }
+  
+  .card-text {
+    font-size: 85%;
+  }
 
 /* Media Query for Responsive Design */
 @media only screen and (max-width: 768px) {
