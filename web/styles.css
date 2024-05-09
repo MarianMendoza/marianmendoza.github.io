@@ -1,15 +1,32 @@
 :root {
     --background-color: #FFE3CA;
     --font-color: #000000;
-    --font-size-sm: 12px;
+    --white-color: #FFFFFF;
+    --font-size-sm: 18px;
     --font-size-md: 24px;
+    --font-size-md-1: 40px;
     --font-size-lg: 64px;
-
+    --button-hover: #FE947F;
 }
+
+
+@font-face{
+    font-family: Yrsa;
+    src: url(/web/res/fonts/Yrsa/Yrsa-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Sansita;
+    src: url(/web/res/fonts/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf);
+}
+
+
 
 .all-content {
+    font-family: Yrsa;
     background-color: var(--background-color);
 }
+
+/* Nav start */
 .navbar-nav {
     margin:auto;
     display: flex;
@@ -22,18 +39,61 @@
     margin-right: 63px;
     color: var(--font-color);
 }
+/* Nav End */
 
+/* Banner Start */
 #banner{
-    padding-top: 100px;
-    padding-bottom: 400px;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 40px;
 }
 .title{
+    font-family: Sansita;
+    margin-right: 20px;
     margin-top: 180px;
     font-size: var(--font-size-lg);
 
 }
 
 .title-paragraph{
-    font-size: var(--font-size-md);
+    margin-right: 20px;
+    font-size: var(--font-size-md-1);
 }
 
+.button-scroll-down{
+    padding-top: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+.button-scroll-down p {
+    font-size: var(--font-size-sm);
+}
+
+.button-scroll-down button{
+    margin: auto;
+    border: none;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+}
+
+img{
+    margin: auto;
+}
+
+.btn img{
+    max-height: 30px;
+}
+
+.button-scroll-down .btn-primary:hover {
+    background-color: var(--button-hover); 
+    border-color: var(--button-hover); 
+    color: var(--white-color); 
+}
+/* Banner End */
+
+#aboutme{
+    background-color: var(--background-color);
+}
