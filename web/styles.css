@@ -1,209 +1,39 @@
 :root {
-    --main-color: #E59500;
-    --font-main: "Anton", Arial, sans-serif;
+    --background-color: #FFE3CA;
+    --font-color: #000000;
+    --font-size-sm: 12px;
+    --font-size-md: 24px;
+    --font-size-lg: 64px;
+
 }
 
-
-@font-face {
-    font-family: Anton;
-    src: url(res\fonts\Anton-Regular.ttf);
+.all-content {
+    background-color: var(--background-color);
 }
-
-@font-face {
-    font-family: Adamina;
-    src: url(res\fonts\Adamina-Regular.ttf);
-}
-
-h1 , h2 ,nav{
-    font-family: Anton;
-}
-
-
-
-body{
-    font-family: Adamina, sans-serif;
-    margin: 0;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    padding: 0;
-}
-
-
-/* Animation fade in */
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-h2{
-    font-size: 96px;
-}
-
-/* TOP PAGE */
-
-.header-nav-container {
+.navbar-nav {
+    margin:auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 20px;
+    justify-content: center;
 }
 
-
-header {
-    color:var(--main-color);
-}
-
-header, nav {
-    padding: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav ul li {
-    margin-right: 40px;
-    padding-right:60px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    background-color: var(--main-color);
-    padding: 16px 40px;
-    border-radius: 20px;
-    margin-left: 40px;
-}
-
-/* About Me */
-#aboutMe {
-    display: flex; 
-    align-items: center;
-    margin-left: 200px;
-    justify-content: space-around; 
-}
-
-#aboutMe h2{
-    color:var(--main-color);
-}
-
-#aboutMe h2, #aboutMe p {
-    margin:0;
-    padding-right: 1px;
-}
-
-#aboutMe .profileImage {
-    max-width: 30%; 
-    margin-right: 200px;
-    flex-shrink: 0; 
-}
-
-.profileImage img {
-    width: 100%; 
-    height: auto; 
+.nav-item{
     margin-top: 30px;
-    box-shadow: 12px -19px var(--main-color);
-    border-radius: 20px; 
-    margin: 0; 
+    font-size: var(--font-size-md);
+    margin-right: 63px;
+    color: var(--font-color);
 }
 
-
-section {
-    padding: 20px 0px 20px 0px;
-    margin: 40px 0px;
+#banner{
+    padding-top: 100px;
+    padding-bottom: 400px;
 }
-
-section:nth-child(odd) {
-    background-color: #f0f0f0;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-}
-
-
-#skillSection{
-    margin-top: 200px;
-    padding: 0px 0px 40px 0px;
-    background-color: var(--main-color);
-    border-radius: 70px 70px 0 0;
+.title{
+    margin-top: 180px;
+    font-size: var(--font-size-lg);
 
 }
 
-#skillSection h2{
-    text-align: center;
-    color: #f0f0f0;
-    padding-top: 20px;
-    margin-bottom: 27px;
+.title-paragraph{
+    font-size: var(--font-size-md);
 }
 
-.row{
-    align-items: stretch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin:10px 200px 30px 200px;
-    margin-top: 10px;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-  .card {
-    background-color: white;
-    border-radius: 20px;
-    text-align: center;
-    margin:0px 70px;
-    align-items: center;
-    padding:50px 0px 210px 0px;
-    margin-bottom: 2rem;
-    border: #333;
-    flex-basis: 23%;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
-  
-  .card > img {
-    margin-bottom: .75rem;
-    margin-top: 80px;
-    text-align: center;
-    width: 40%;
-  }
-  
-  .card-text {
-    font-size: 85%;
-  }
-
-/* Media Query for Responsive Design */
-@media only screen and (max-width: 768px) {
-    .header-nav-container {
-        flex-direction: column;
-        padding: 10px;
-    }
-    header, nav {
-        padding: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    nav ul {
-        justify-content: center;
-    }
-    nav ul li {
-        margin-right: 10px;
-    }
-}
