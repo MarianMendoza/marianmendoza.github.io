@@ -20,7 +20,6 @@
 }
 
 
-
 .all-content {
     font-family: Yrsa;
     background-color: var(--background-color);
@@ -44,24 +43,27 @@
 /* Banner Start */
 #banner{
     margin: auto;
-    padding-top: 90px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 0px;
 }
 .title{
+    margin-left: 80px;
     font-family: Sansita;
     margin-right: 20px;
-    margin-top: 180px;
+    margin-top: 150px;
     font-size: var(--font-size-lg);
 
 }
 
 .title-paragraph{
+    margin-left: 80px;
     margin-right: 20px;
     font-size: var(--font-size-md-1);
 }
 
 .button-scroll-down{
-    padding-top: 150px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     margin: auto;
     text-align: center;
 }
@@ -81,6 +83,7 @@
 
 img{
     margin: auto;
+    max-width: 100% ;
 }
 
 .btn img{
@@ -92,8 +95,36 @@ img{
     border-color: var(--button-hover); 
     color: var(--white-color); 
 }
+
 /* Banner End */
 
 #aboutme{
+    display: flex;
+    margin: auto;
+    padding-top: 100px;
     background-color: var(--background-color);
 }
+
+#aboutme h2{
+    font-family: Sansita;
+    text-align: center;
+    margin-bottom: 90px;
+    font-size: var(--font-size-lg);
+}
+#aboutme img {
+    margin: auto;
+    max-width: 100%; 
+    display: block;
+}
+
+.aboutme-p {
+    margin-top: 5%;
+    text-align: justify;
+    font-size: var(--font-size-md);
+    margin-left: auto;
+    margin-right: 20%;
+    max-width: 100%; 
+}
+
+
+
