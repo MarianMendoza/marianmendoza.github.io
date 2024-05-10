@@ -98,9 +98,12 @@ img{
 
 /* Banner End */
 
+/* About Me Start */
+
 #aboutme{
     display: flex;
     margin: auto;
+    padding-bottom: 5%;
     padding-top: 100px;
     background-color: var(--background-color);
 }
@@ -111,6 +114,7 @@ img{
     margin-bottom: 90px;
     font-size: var(--font-size-lg);
 }
+
 #aboutme img {
     margin: auto;
     max-width: 100%; 
@@ -126,5 +130,11 @@ img{
     max-width: 100%; 
 }
 
-
-
+/* About Me End */
+/* Skills Start */
+#skills h2{
+    font-family: Sansita;
+    text-align: center;
+    margin-bottom: 90px;
+    font-size: var(--font-size-lg);
+}
