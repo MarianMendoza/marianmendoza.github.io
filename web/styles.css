@@ -19,6 +19,13 @@
     src: url(/web/res/fonts/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf);
 }
 
+h2{
+    font-family: Sansita;
+    text-align: center;
+    margin-bottom: 40px !important;
+    font-size: var(--font-size-lg)!important;
+}
+
 
 .all-content {
     font-family: Yrsa;
@@ -96,6 +103,13 @@ img{
     color: var(--white-color); 
 }
 
+.button:focus,
+.button:active,
+.btn:focus,
+.button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
 /* Banner End */
 
 /* About Me Start */
@@ -108,12 +122,7 @@ img{
     background-color: var(--background-color);
 }
 
-#aboutme h2{
-    font-family: Sansita;
-    text-align: center;
-    margin-bottom: 90px;
-    font-size: var(--font-size-lg);
-}
+
 
 #aboutme img {
     margin: auto;
@@ -132,9 +141,26 @@ img{
 
 /* About Me End */
 /* Skills Start */
-#skills h2{
-    font-family: Sansita;
-    text-align: center;
-    margin-bottom: 90px;
-    font-size: var(--font-size-lg);
+
+#skills{
+    margin-bottom: 100px;
 }
+.custom-card.card {
+    border-radius: 80px 80px 0 0 !important; /* top-left, top-right, bottom-right, bottom-left */
+    height: 370px; /* Adjust height as needed */
+    width: 300px;
+
+
+}
+
+.card-image-top{
+    margin:auto;
+    text-align: center;
+}
+.card {
+
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+/* Skills End */
