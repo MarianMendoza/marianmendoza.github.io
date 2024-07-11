@@ -15,7 +15,6 @@
 <body>
     <div class="all-content">
         <!-- Navbar -->
-
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,7 +42,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT ME</a>
+                            <a class="nav-link" href="#contact-me">CONTACT ME</a>
                         </li>
                     </ul>
 
@@ -74,8 +73,9 @@
                         <p>Scroll Down For More!</p>
                     </div>
                     <div class="row">
-                        <button class="btn btn-primary d-flex align-items-center justify-content-center"><img
-                                src="/web/res/img/arrow-down.png"></button>
+                        <button id="scrolldown" onclick="scrollDown()" aria-label="Scroll Down to next section"
+                            class="btn btn-primary d-flex align-items-center justify-content-center"><i
+                                class="fa-solid fa-chevron-down"></i></button>
                     </div>
                 </div>
             </div>
@@ -274,147 +274,178 @@
 
         </section>
 
-        <!-- Start -->
+        <!-- Start Projects -->
 
         <section id="projects">
-                    <h2>Projects</h2>
-
-                <div class="project-container">
-                    <div class="row">
-                        <h3>CHOMG Best Software Project Award Supported By SIG</h3>
-                        <div class="col-md-12 col-sm-12 col-lg-6">
-                            <div class="video-container">
-                                <iframe frameborder="0" allowfullscreen=""
-                                    src="https://youtu.be/YXAGMiszHaQ">
-                                </iframe>
-                            </div>
-
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="row">
+                    <h3>CHOMG Best Software Project Award Supported By SIG</h3>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <div class="video-container">
+                            <iframe frameborder="0" allowfullscreen="" src="https://youtu.be/YXAGMiszHaQ">
+                            </iframe>
                         </div>
-                        <div class="col-md-12 col-sm-12 col-lg-6">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
-                                dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
-                                consequatur recusandae praesentium tempora a laboriosam?</p>
+
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
+                            dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
+                            consequatur recusandae praesentium tempora a laboriosam?</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="row">
+                    <h3>NorthWind Table Viewer and Exporter</h3>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <div class="video-container">
+                            <iframe frameborder="0" allowfullscreen="" src="https://youtu.be/2Ibml2FGJUI">
+                            </iframe>
                         </div>
+
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
+                            dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
+                            consequatur recusandae praesentium tempora a laboriosam?</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="row">
+                    <h3>FlowerRev</h3>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <div class="video-container">
+                            <iframe frameborder="0" allowfullscreen="" src="https://youtu.be/vuuqAK9Lkuc">
+                            </iframe>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
+                            dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
+                            consequatur recusandae praesentium tempora a laboriosam?</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="project-container">
+                <div class="row">
+                    <h3>Muudy</h3>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <div class="video-container">
+                            <iframe frameborder="0" allowfullscreen="" src="https://youtu.be/vRX9s-ALJV0">
+                            </iframe>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
+                            dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
+                            consequatur recusandae praesentium tempora a laboriosam?</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="row">
+                    <h3>Project and Play</h3>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <div class="video-container">
+                            <iframe frameborder="0" allowfullscreen="" src="https://youtu.be/vuuqAK9Lkuc">
+                            </iframe>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
+                            dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
+                            consequatur recusandae praesentium tempora a laboriosam?</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+            <div class="project-container">
+                <div class="row">
+                    <h3>Aphrodites Den</h3>
+                    <div class="col-sm-6">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
+                            dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
+                            consequatur recusandae praesentium tempora a laboriosam?</p>
 
 
                     </div>
-                </div>
-
-                <div class="project-container">
-                    <div class="row">
-                        <h3>NorthWind Table Viewer and Exporter</h3>
-                        <div class="col-md-12 col-sm-12 col-lg-6">
-                            <div class="video-container">
-                                <iframe frameborder="0" allowfullscreen=""
-                                    src="https://youtu.be/2Ibml2FGJUI">
-                                </iframe>
-                            </div>
-
+                    <div class="col-sm-6">
+                        <div class="video-container">
+                            <iframe width="640" height="360" frameborder="0" allowfullscreen=""
+                                src="https://youtu.be/vuuqAK9Lkuc">
+                            </iframe>
                         </div>
-                        <div class="col-md-12 col-sm-12 col-lg-6">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
-                                dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
-                                consequatur recusandae praesentium tempora a laboriosam?</p>
-                        </div>
-
 
                     </div>
                 </div>
-
-                <div class="project-container">
-                    <div class="row">
-                        <h3>FlowerRev</h3>
-                        <div class="col-md-12 col-sm-12 col-lg-6">
-                            <div class="video-container">
-                                <iframe frameborder="0" allowfullscreen=""
-                                    src="https://youtu.be/vuuqAK9Lkuc">
-                                </iframe>
-                            </div>
-
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-lg-6">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
-                                dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
-                                consequatur recusandae praesentium tempora a laboriosam?</p>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                
-                <div class="project-container">
-                    <div class="row">
-                        <h3>Muudy</h3>
-                        <div class="col-md-12 col-sm-12 col-lg-6">
-                            <div class="video-container">
-                                <iframe frameborder="0" allowfullscreen=""
-                                    src="https://youtu.be/vRX9s-ALJV0">
-                                </iframe>
-                            </div>
-
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-lg-6">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
-                                dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
-                                consequatur recusandae praesentium tempora a laboriosam?</p>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="project-container">
-                    <div class="row">
-                        <h3>Project and Play</h3>
-                        <div class="col-md-12 col-sm-12 col-lg-6">
-                            <div class="video-container">
-                                <iframe frameborder="0" allowfullscreen=""
-                                    src="https://youtu.be/vuuqAK9Lkuc">
-                                </iframe>
-                            </div>
-
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-lg-6">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
-                                dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
-                                consequatur recusandae praesentium tempora a laboriosam?</p>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                
-               
-
-                <div class="project-container">
-                    <div class="row">
-                        <h3>Aphrodites Den</h3>
-                        <div class="col-sm-6">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit vero quidem ipsa soluta
-                                dolorum autem iure voluptatibus atque itaque. Saepe aliquid repudiandae mollitia
-                                consequatur recusandae praesentium tempora a laboriosam?</p>
-                          
-
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="video-container">
-                                <iframe width="640" height="360" frameborder="0" allowfullscreen=""
-                                    src="https://youtu.be/vuuqAK9Lkuc">
-                                </iframe>
-                            </div>
-                          
-                        </div>
-                    </div>
-                </div>
-
-
+            </div>
         </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+        <!-- Start Contact Information -->
+        <section id="contact-me">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="row">
+                    <div class="contact-container">
+                        <i class="fa-brands fa-linkedin"></i>
+
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/marian-mendoza-a45430262/">Marian Mendoza</a></p>
+                    </div>
+                </div>
+                 
+                <div class="row">
+                    <div class="contact-container">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <p>Email: marianmendoza413@gmail.com</p>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="contact-container">
+                        <i class="fa-brands fa-github"></i>
+
+                        <p>Github Profile:<a href="https://github.com/MarianMendoza">Marian Mendoza</a></p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+    </div>
+
 </body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6e9cbe6372.js" crossorigin="anonymous"></script>
+<script src="/web/index.js"></script>
+
 
 </html>
