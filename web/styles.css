@@ -283,12 +283,26 @@ html{
 
 #projects{
     background-color:var(--white-color);
+    padding-bottom: 50px;
 }
 
 .video-container iframe{
     margin: auto;
     display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+.image-container {
+    margin-left: 130px;
+}
+.image-container img{
+    width: 640px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
 .project-container{
     padding: 30px;
     padding-bottom: 20px;
@@ -325,14 +339,11 @@ iframe{
 .contact-container i,
 .contact-container p {
     padding: 10px;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-md-1);
 }
 
 .contact-container p{
     margin-bottom: 0px !important;
 }
-
-
-
 
 
