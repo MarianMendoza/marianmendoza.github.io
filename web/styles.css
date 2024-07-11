@@ -31,6 +31,7 @@ h2{
 html{
     scroll-behavior: smooth;
 }
+
 .all-content {
     font-family: Yrsa;
     background-color: var(--background-color);
@@ -192,76 +193,72 @@ html{
     font-size: 16px;
 }
 
-#work-experience .card{
-    border: none;
+ /* CSS for the timeline */
+.container.position-relative {
+    position: relative;
 }
 
 
-#work-experience{
-    padding-bottom: 100px;
+/* CSS for the timeline */
+.container.position-relative {
+    position: relative;
 }
-.left-arrow {
-    position: absolute;
-    height: 0;
-    width: 0;
-    top:28px;
+
+
+.card {
     z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 1px solid var(--button-hover);
-    right: -14px;
 }
 
+.leftBox {
+    margin-left: -40rem;
+}
+
+.rightBox {
+    margin-right: -40rem;
+}
+
+.left-arrow, .right-arrow {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-arrow {
+    left: 100%;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
 
 .right-arrow {
+    right: 100%;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+
+
+.timeline {
     position: absolute;
-    height: 0;
-    width: 0;
-    top:28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 1px solid var(--button-hover);
-    left: -14px;
-}
-
-.leftBox{
-    left:-30%;
-}
-
-.rightBox{
-    left: 30%;
-}
-
-#work-experience .card img{
-    position:absolute;
-    border-radius: 100%;
-    right: -100px;
-    top:32px;
-    z-index: 10;
-}
-
-.rightBox img{
-    left: -100px;
-}
-
-.fa-chevron-down{
-    color: black;
+    left: 50%;
+    top: 0;
+    width: 4px !important;
+    height: 100%;
+    background: white;
+    transform: translateX(-50%);
 }
 
 #work-experience h2{
     margin-bottom: 100px !important;
 }
 
-#work-experience .whiteLine {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 5px; /* Width of the vertical line */
-    height: 100%; /* Span the entire height of the section */
-    background-color: white;
-    z-index: 9999; /* Ensure it's above other content */
-    }
+#work-experience{
+    padding-bottom:40px;
+}
+
 
 #work-experience .card{animation: line 1s linear forwards; opacity: 0;}
 @keyframes line{
@@ -275,9 +272,10 @@ html{
     animation-delay: 1s;
 }.card:nth-child(3){
     animation-delay: 0s;
-}
+} 
 
 #projects h2{
+    margin-top: 0px !important;
     background-image: linear-gradient(var(--background-color), var(--white-color));
 }
 
@@ -286,48 +284,69 @@ html{
     padding-bottom: 50px;
 }
 
-.video-container iframe{
+.video-container, .image-container{
     margin: auto;
+    justify-content: center;
     display: flex;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.image-container {
-    margin-left: 130px;
-}
-.image-container img{
+
+.image-container img,
+.video-container iframe {
     width: 640px;
-    height: auto;
+    height: 360px;
     border-radius: 10px;
+    size: 100%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.project-container:nth-child(even) h3{
+    text-align: left;
+    padding-left: 140px;
+
+}
+
+.project-container:nth-child(odd) h3 {
+    text-align: right;
+    padding-right: 140px;
+
+}
+
+.project-container:nth-child(even) p,
+.project-container:nth-child(odd) p {
+    margin: auto;
+}
+
+i{
+    color: black;
+}
 
 .project-container{
     padding: 30px;
     padding-bottom: 20px;
 }
 
-iframe{
-    border-radius: 10px;
-    width: 640px;
-    height: 360px;
-    size: 100%;
-}
 
 .project-container h3{
     font-size: var(--font-size-md-1);
     margin-bottom: 40px;
+
 }
 
 .project-container p{
     font-size: var(--font-size-md);
 }
 
-#contact-me h2{
+#contact-me {
+    padding-bottom:30px ;
+}
+
+#contact-me h5{
     background-image: linear-gradient(var(--white-color), var(--background-color));
     margin-top: 0px !important;
     padding-top: 40px;
+    text-align: center;
+    font-size: var(--font-size-md-1) ;
 
 }
 
@@ -339,7 +358,7 @@ iframe{
 .contact-container i,
 .contact-container p {
     padding: 10px;
-    font-size: var(--font-size-md-1);
+    font-size: var(--font-size-sm);
 }
 
 .contact-container p{
