@@ -12,11 +12,11 @@
 
 @font-face{
     font-family: Yrsa;
-    src: url(/web/res/fonts/Yrsa/Yrsa-VariableFont_wght.ttf);
+    src: url(res/fonts/Yrsa/Yrsa-VariableFont_wght.ttf);
 }
 @font-face{
     font-family: Sansita;
-    src: url(/web/res/fonts/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf);
+    src: url(res/fonts/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf);
 }
 
 h2{
