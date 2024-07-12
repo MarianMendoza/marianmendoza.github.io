@@ -66,6 +66,26 @@ html{
 
 }
 
+#banner img {
+    transition: 0.5s;
+    
+}
+
+#banner img:hover{
+	transform: translateY(-25px);
+
+}
+
+#aboutme img {
+    transition: 0.5s;
+    
+}
+
+#aboutme img:hover{
+	transform: translateY(-25px);
+
+}
+
 .title-paragraph{
     margin-left: 80px;
     margin-right: 20px;
