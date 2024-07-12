@@ -1,2 +1,1 @@
-# Portfolio
-Made website for portfolio including projects complete.
+# marianmendoza.github.io
