@@ -163,6 +163,7 @@ html{
     margin: auto;
     margin-bottom: 40px;
     text-align: center;
+    transition: 0.5s;
     box-shadow: rgba(17,17,26,0.1) 0px 0px 16px;
 }
 
@@ -204,6 +205,9 @@ html{
     position: relative;
 }
 
+.card:hover{
+	transform: translateY(-25px);
+}
 
 .card {
     z-index: 1;
@@ -259,20 +263,17 @@ html{
     padding-bottom:40px;
 }
 
+#work-experience .card{
+    transition: 0.5s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-#work-experience .card{animation: line 1s linear forwards; opacity: 0;}
-@keyframes line{
-    0%{opacity:1 ; transform:  translateY(10px);}
-    100%{opacity:1 ;transform: translateY(0px);}
+
 }
-.card:nth-child(1){
-    animation-delay: 0s;
+
+#work-experience .card:hover{
+	transform: translateY(-25px);
 }
-.card:nth-child(2){
-    animation-delay: 1s;
-}.card:nth-child(3){
-    animation-delay: 0s;
-} 
+
 
 #projects h2{
     margin-top: 0px !important;
@@ -352,6 +353,16 @@ a {
     text-align: center;
     font-size: var(--font-size-md-1) ;
 
+}
+
+.btn-primary:active {
+    background-color: var(--button-hover)!important;
+}
+
+
+
+ul a{
+    color: var(--font-color)!important;
 }
 
 .contact-container{
