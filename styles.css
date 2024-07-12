@@ -76,11 +76,6 @@ html{
 
 }
 
-#aboutme img {
-    transition: 0.5s;
-    
-}
-
 #aboutme img:hover{
 	transform: translateY(-25px);
 
@@ -115,6 +110,7 @@ html{
 #aboutme img{
     margin: auto;
     margin-top: 200px;
+    transition: 0.5s;
     max-width: 100% ;
 }
 
